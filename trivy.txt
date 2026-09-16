@@ -1,0 +1,40 @@
+used `ldd $(which nginx)` to detect the libraries used by nginx
+
+used trivy and grype <image name> to detect vulnerabilities in the libraries used by nginx
+
+libpcre2-8
+
+readelf -s /usr/sbin/nginx | grep pcre2
+
+CVE-2026-86145 - the command did not match - pcre2_dfa_match
+CVE-2026-89161 - no command pcre2_jit_match
+CVE-2026-89158 - no command pcre2_compile_32, 32bit
+CVE-2026-89157 - 32bit
+
+
+
+libc6
+
+CVE-2026-4046 - nop iconv
+CVE-2025-0395 - no assert
+CVE-2026-5450 - nope
+
+
+
+CVE-2024-2511 - YESSSS
+How was found - looking over the `grype` tests look at higher probability first.
+Then looked at `https://security-tracker.debian.org/tracker/CVE-2024-2511`
+Google search it and found `https://mailman.nginx.org/pipermail/nginx-devel/2020-April/013092.html`
+
+
+
+
+CVE-2024-5535 - MAYBE
+
+
+objdump -d /usr/sbin/nginx | grep SSL_select_next_proto
+000000000002e1e0 <SSL_select_next_proto@plt>:
+   2e1e0:	ff 25 aa d0 12 00    	jmp    *0x12d0aa(%rip)        # 15b290 <SSL_select_next_proto@OPENSSL_3.0.0>
+   d56b3:	e8 28 8b f5 ff       	call   2e1e0 <SSL_select_next_proto@plt>
+   fb1af:	e8 2c 30 f3 ff       	call   2e1e0 <SSL_select_next_proto@plt>
+  110fc9:	e8 12 d2 f1 ff       	call   2e1e0 <SSL_select_next_proto@plt>

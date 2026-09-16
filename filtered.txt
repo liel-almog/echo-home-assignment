@@ -1,0 +1,304 @@
+CVE-2022-49043	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml: use-after-free in xmlXIncludeAddNode
+CVE-2023-25433	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	MEDIUM	libtiff: Buffer Overflow via /libtiff/tools/tiffcrop.c
+CVE-2023-26965	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	MEDIUM	libtiff: heap-based use after free via a crafted TIFF image in loadImage() in tiffcrop.c
+CVE-2023-26966	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	MEDIUM	libtiff: Buffer Overflow in uv_encode()
+CVE-2023-2908	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	MEDIUM	libtiff: null pointer dereference in tif_dir.c
+CVE-2023-29383	login	1:4.13+dfsg1-1+b1	1:4.13+dfsg1-1+deb12u1	LOW	shadow: Improper input validation in shadow-utils package utility chfn
+CVE-2023-29383	passwd	1:4.13+dfsg1-1+b1	1:4.13+dfsg1-1+deb12u1	LOW	shadow: Improper input validation in shadow-utils package utility chfn
+CVE-2023-29659	libheif1	1.15.1-1	1.15.1-1+deb12u1	MEDIUM	A Segmentation fault caused by a floating point exception exists in li ...
+CVE-2023-31484	perl-base	5.36.0-7+deb12u1	5.36.0-7+deb12u3	HIGH	perl: CPAN.pm does not verify TLS certificates when downloading distributions over HTTPS
+CVE-2023-3618	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	MEDIUM	libtiff: segmentation fault in Fax3Encode in libtiff/tif_fax3.c
+CVE-2023-39615	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	MEDIUM	libxml2: crafted xml can cause global buffer overflow
+CVE-2023-4039	gcc-12-base	12.2.0-14	12.2.0-14+deb12u1	LOW	gcc: -fstack-protector fails to guard dynamic stack allocations on ARM64
+CVE-2023-4039	libgcc-s1	12.2.0-14	12.2.0-14+deb12u1	LOW	gcc: -fstack-protector fails to guard dynamic stack allocations on ARM64
+CVE-2023-4039	libstdc++6	12.2.0-14	12.2.0-14+deb12u1	LOW	gcc: -fstack-protector fails to guard dynamic stack allocations on ARM64
+CVE-2023-40403	libxslt1.1	1.1.35-1	1.1.35-1+deb12u2	MEDIUM	libxslt: Processing web content may disclose sensitive information
+CVE-2023-45322	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	MEDIUM	libxml2: use-after-free in xmlUnlinkNode() in tree.c
+CVE-2023-4641	login	1:4.13+dfsg1-1+b1	1:4.13+dfsg1-1+deb12u1	MEDIUM	shadow-utils: possible password leak during passwd(1) change
+CVE-2023-4641	passwd	1:4.13+dfsg1-1+b1	1:4.13+dfsg1-1+deb12u1	MEDIUM	shadow-utils: possible password leak during passwd(1) change
+CVE-2023-49462	libheif1	1.15.1-1	1.15.1-1+deb12u1	HIGH	libheif v1.17.5 was discovered to contain a segmentation violation via ...
+CVE-2023-50387	libsystemd0	252.22-1~deb12u1	252.23-1~deb12u1	HIGH	bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator
+CVE-2023-50387	libudev1	252.22-1~deb12u1	252.23-1~deb12u1	HIGH	bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator
+CVE-2023-50868	libsystemd0	252.22-1~deb12u1	252.23-1~deb12u1	HIGH	bind9: Preparing an NSEC3 closest encloser proof can exhaust CPU resources
+CVE-2023-50868	libudev1	252.22-1~deb12u1	252.23-1~deb12u1	HIGH	bind9: Preparing an NSEC3 closest encloser proof can exhaust CPU resources
+CVE-2023-52356	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	HIGH	libtiff: Segment fault in libtiff  in TIFFReadRGBATileExt() leading to denial of service
+CVE-2023-52425	libexpat1	2.5.0-1	2.5.0-1+deb12u2	HIGH	expat: parsing large tokens can trigger a denial of service
+CVE-2023-5678	libssl3	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow
+CVE-2023-5678	openssl	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow
+CVE-2023-6129	libssl3	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC
+CVE-2023-6129	openssl	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC
+CVE-2023-6237	libssl3	3.0.11-1~deb12u2	3.0.13-1~deb12u1	LOW	openssl: Excessive time spent checking invalid RSA public keys
+CVE-2023-6237	openssl	3.0.11-1~deb12u2	3.0.13-1~deb12u1	LOW	openssl: Excessive time spent checking invalid RSA public keys
+CVE-2024-0727	libssl3	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: denial of service via null dereference
+CVE-2024-0727	openssl	3.0.11-1~deb12u2	3.0.13-1~deb12u1	MEDIUM	openssl: denial of service via null dereference
+CVE-2024-11053	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u10	LOW	curl: curl netrc password leak
+CVE-2024-11053	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u10	LOW	curl: curl netrc password leak
+CVE-2024-12133	libtasn1-6	4.19.0-2	4.19.0-2+deb12u1	MEDIUM	libtasn1: Inefficient DER Decoding in libtasn1 Leading to Potential Remote DoS
+CVE-2024-12243	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u4	MEDIUM	gnutls: GnuTLS Impacted by Inefficient DER Decoding in libtasn1 Leading to Remote DoS
+CVE-2024-13176	libssl3	3.0.11-1~deb12u2	3.0.16-1~deb12u1	LOW	openssl: Timing side-channel in ECDSA signature computation
+CVE-2024-13176	openssl	3.0.11-1~deb12u2	3.0.16-1~deb12u1	LOW	openssl: Timing side-channel in ECDSA signature computation
+CVE-2024-2004	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u6	LOW	curl: Usage of disabled protocol
+CVE-2024-2004	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u6	LOW	curl: Usage of disabled protocol
+CVE-2024-22365	libpam0g	1.5.2-6+deb12u1	1.5.2-6+deb12u2	MEDIUM	pam: allowing unprivileged user to block another user namespace
+CVE-2024-22365	libpam-modules	1.5.2-6+deb12u1	1.5.2-6+deb12u2	MEDIUM	pam: allowing unprivileged user to block another user namespace
+CVE-2024-22365	libpam-modules-bin	1.5.2-6+deb12u1	1.5.2-6+deb12u2	MEDIUM	pam: allowing unprivileged user to block another user namespace
+CVE-2024-22365	libpam-runtime	1.5.2-6+deb12u1	1.5.2-6+deb12u2	MEDIUM	pam: allowing unprivileged user to block another user namespace
+CVE-2024-2398	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u6	MEDIUM	curl: HTTP/2 push headers memory-leak
+CVE-2024-2398	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u6	MEDIUM	curl: HTTP/2 push headers memory-leak
+CVE-2024-25062	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml2: use-after-free in XMLReader
+CVE-2024-2511	libssl3	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Unbounded memory growth with session handling in TLSv1.3
+CVE-2024-2511	openssl	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Unbounded memory growth with session handling in TLSv1.3
+CVE-2024-26462	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: Memory leak at /krb5/src/kdc/ndr.c
+CVE-2024-26462	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: Memory leak at /krb5/src/kdc/ndr.c
+CVE-2024-26462	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: Memory leak at /krb5/src/kdc/ndr.c
+CVE-2024-26462	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: Memory leak at /krb5/src/kdc/ndr.c
+CVE-2024-28182	libnghttp2-14	1.52.0-1+deb12u1	1.52.0-1+deb12u2	MEDIUM	nghttp2: CONTINUATION frames DoS
+CVE-2024-28834	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u3	MEDIUM	gnutls: vulnerable to Minerva side-channel information leak
+CVE-2024-28835	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u3	MEDIUM	gnutls: potential crash during chain building/verification
+CVE-2024-34459	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	LOW	libxml2: buffer over-read in xmlHTMLPrintFileContext in xmllint.c
+CVE-2024-37370	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u2	HIGH	krb5: GSS message token handling
+CVE-2024-37370	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u2	HIGH	krb5: GSS message token handling
+CVE-2024-37370	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u2	HIGH	krb5: GSS message token handling
+CVE-2024-37370	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u2	HIGH	krb5: GSS message token handling
+CVE-2024-37371	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u2	CRITICAL	krb5: GSS message token handling
+CVE-2024-37371	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u2	CRITICAL	krb5: GSS message token handling
+CVE-2024-37371	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u2	CRITICAL	krb5: GSS message token handling
+CVE-2024-37371	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u2	CRITICAL	krb5: GSS message token handling
+CVE-2024-41311	libheif1	1.15.1-1	1.15.1-1+deb12u1	HIGH	In Libheif 1.17.6, insufficient checks in ImageOverlay::parse() decodi ...
+CVE-2024-45490	libexpat1	2.5.0-1	2.5.0-1+deb12u1	HIGH	libexpat: Negative Length Parsing Vulnerability in libexpat
+CVE-2024-45491	libexpat1	2.5.0-1	2.5.0-1+deb12u1	CRITICAL	libexpat: Integer Overflow or Wraparound
+CVE-2024-45492	libexpat1	2.5.0-1	2.5.0-1+deb12u1	CRITICAL	libexpat: integer overflow
+CVE-2024-4603	libssl3	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Excessive time spent checking DSA keys and parameters
+CVE-2024-4603	openssl	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Excessive time spent checking DSA keys and parameters
+CVE-2024-4741	libssl3	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Use After Free with SSL_free_buffers
+CVE-2024-4741	openssl	3.0.11-1~deb12u2	3.0.14-1~deb12u1	LOW	openssl: Use After Free with SSL_free_buffers
+CVE-2024-50602	libexpat1	2.5.0-1	2.5.0-1+deb12u2	MEDIUM	libexpat: expat: DoS via XML_ResumeParser
+CVE-2024-5171	libaom3	3.6.0-1	3.6.0-1+deb12u1	CRITICAL	libaom: Integer overflow in internal function img_alloc_helper
+CVE-2024-5535	libssl3	3.0.11-1~deb12u2	3.0.15-1~deb12u1	LOW	openssl: SSL_select_next_proto buffer overread
+CVE-2024-5535	openssl	3.0.11-1~deb12u2	3.0.15-1~deb12u1	LOW	openssl: SSL_select_next_proto buffer overread
+CVE-2024-55549	libxslt1.1	1.1.35-1	1.1.35-1+deb12u1	HIGH	libxslt: Use-After-Free in libxslt (xsltGetInheritedNsList)
+CVE-2024-56171	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	CRITICAL	libxml2: Use-After-Free in libxml2
+CVE-2024-56406	perl-base	5.36.0-7+deb12u1	5.36.0-7+deb12u2	HIGH	perl: Perl 5.34, 5.36, 5.38 and 5.40 are vulnerable to a heap buffer overflow when transliterating non-ASCII bytes
+CVE-2024-6119	libssl3	3.0.11-1~deb12u2	3.0.14-1~deb12u2	HIGH	openssl: Possible denial of service in X.509 name checks
+CVE-2024-6119	openssl	3.0.11-1~deb12u2	3.0.14-1~deb12u2	HIGH	openssl: Possible denial of service in X.509 name checks
+CVE-2024-7006	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u2	HIGH	libtiff: NULL pointer dereference in tif_dirinfo.c
+CVE-2024-7264	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u7	MEDIUM	curl: libcurl: ASN.1 date parser overread
+CVE-2024-7264	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u7	MEDIUM	curl: libcurl: ASN.1 date parser overread
+CVE-2024-8096	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u8	MEDIUM	curl: OCSP stapling bypass with GnuTLS
+CVE-2024-8096	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u8	MEDIUM	curl: OCSP stapling bypass with GnuTLS
+CVE-2024-8176	libexpat1	2.5.0-1	2.5.0-1+deb12u2	MEDIUM	libexpat: expat: Improper Restriction of XML Entity Expansion Depth in libexpat
+CVE-2024-9143	libssl3	3.0.11-1~deb12u2	3.0.15-1~deb12u1	LOW	openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access
+CVE-2024-9143	openssl	3.0.11-1~deb12u2	3.0.15-1~deb12u1	LOW	openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access
+CVE-2024-9681	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u9	MEDIUM	curl: HSTS subdomain overwrites parent cache entry
+CVE-2024-9681	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u9	MEDIUM	curl: HSTS subdomain overwrites parent cache entry
+CVE-2025-0167	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u11	LOW	When asked to use a `.netrc` file for credentials **and** to follow HT ...
+CVE-2025-0167	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u11	LOW	When asked to use a `.netrc` file for credentials **and** to follow HT ...
+CVE-2025-0395	libc6	2.36-9+deb12u7	2.36-9+deb12u10	MEDIUM	glibc: buffer overflow in the GNU C Library's assert()
+CVE-2025-0395	libc-bin	2.36-9+deb12u7	2.36-9+deb12u10	MEDIUM	glibc: buffer overflow in the GNU C Library's assert()
+CVE-2025-0838	libabsl20220623	20220623.1-1	20220623.1-1+deb12u1	CRITICAL	abseil-cpp: Heap Buffer overflow in Abseil
+CVE-2025-10148	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: predictable WebSocket mask
+CVE-2025-10148	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: predictable WebSocket mask
+CVE-2025-1390	libcap2	1:2.66-4	1:2.66-4+deb12u1	MEDIUM	libcap: pam_cap: Fix potential configuration parsing error
+CVE-2025-14524	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token
+CVE-2025-14524	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token
+CVE-2025-14819	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: libcurl: Improper certificate validation due to cached TLS settings reuse
+CVE-2025-14819	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	LOW	curl: libcurl: Improper certificate validation due to cached TLS settings reuse
+CVE-2025-14831	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u6	MEDIUM	gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification
+CVE-2025-15281	libc6	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory
+CVE-2025-15281	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory
+CVE-2025-15467	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	HIGH	openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing
+CVE-2025-15467	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	HIGH	openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing
+CVE-2025-15661	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	MEDIUM	libssh2: libssh2: Information disclosure and denial of service via crafted SFTP response
+CVE-2025-24528	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: overflow when calculating ulog block size
+CVE-2025-24528	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: overflow when calculating ulog block size
+CVE-2025-24528	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: overflow when calculating ulog block size
+CVE-2025-24528	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u3	MEDIUM	krb5: overflow when calculating ulog block size
+CVE-2025-24855	libxslt1.1	1.1.35-1	1.1.35-1+deb12u1	HIGH	libxslt: Use-After-Free in libxslt numbers.c
+CVE-2025-24928	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2
+CVE-2025-27113	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml2: NULL Pointer Dereference in libxml2 xmlPatMatch
+CVE-2025-27363	libfreetype6	2.12.1+dfsg-5	2.12.1+dfsg-5+deb12u4	HIGH	freetype: OOB write when attempting to parse font subglyph structures related to TrueType GX and variable font files
+CVE-2025-31115	liblzma5	5.4.1-0.2	5.4.1-1	HIGH	xz: XZ has a heap-use-after-free bug in threaded .xz decoder
+CVE-2025-32414	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml2: Out-of-Bounds Read in libxml2
+CVE-2025-32415	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u2	HIGH	libxml2: Out-of-bounds Read in xmlSchemaIDCFillNodeTables
+CVE-2025-32988	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u5	HIGH	gnutls: Vulnerability in GnuTLS otherName SAN export
+CVE-2025-32989	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u5	MEDIUM	gnutls: Vulnerability in GnuTLS SCT extension parsing
+CVE-2025-32990	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u5	HIGH	gnutls: Vulnerability in GnuTLS certtool template parsing
+CVE-2025-3576	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u4	MEDIUM	krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions
+CVE-2025-3576	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u4	MEDIUM	krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions
+CVE-2025-3576	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u4	MEDIUM	krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions
+CVE-2025-3576	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u4	MEDIUM	krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions
+CVE-2025-40909	perl-base	5.36.0-7+deb12u1	5.36.0-7+deb12u3	MEDIUM	perl: Perl threads have a working directory race condition where file operations may target unintended paths
+CVE-2025-4598	libsystemd0	252.22-1~deb12u1	252.38-1~deb12u1	MEDIUM	systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump
+CVE-2025-4598	libudev1	252.22-1~deb12u1	252.38-1~deb12u1	MEDIUM	systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump
+CVE-2025-4802	libc6	2.36-9+deb12u7	2.36-9+deb12u11	MEDIUM	glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH
+CVE-2025-4802	libc-bin	2.36-9+deb12u7	2.36-9+deb12u11	MEDIUM	glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH
+CVE-2025-48174	libavif15	0.11.1-1	0.11.1-1+deb12u1	CRITICAL	In libavif before 1.3.0, makeRoom in stream.c has an integer overflow  ...
+CVE-2025-48175	libavif15	0.11.1-1	0.11.1-1+deb12u1	MEDIUM	In libavif before 1.3.0, avifImageRGBToYUV in reformat.c has integer o ...
+CVE-2025-49794	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u3	HIGH	libxml: Heap use after free (UAF) leads to Denial of service (DoS)
+CVE-2025-49796	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u3	HIGH	libxml: Type confusion leads to Denial of service (DoS)
+CVE-2025-5222	libicu72	72.1-3	72.1-3+deb12u1	MEDIUM	icu: Stack buffer overflow in the SRBRoot::addTag function
+CVE-2025-6020	libpam0g	1.5.2-6+deb12u1	1.5.2-6+deb12u2	HIGH	linux-pam: Linux-pam directory Traversal
+CVE-2025-6020	libpam-modules	1.5.2-6+deb12u1	1.5.2-6+deb12u2	HIGH	linux-pam: Linux-pam directory Traversal
+CVE-2025-6020	libpam-modules-bin	1.5.2-6+deb12u1	1.5.2-6+deb12u2	HIGH	linux-pam: Linux-pam directory Traversal
+CVE-2025-6020	libpam-runtime	1.5.2-6+deb12u1	1.5.2-6+deb12u2	HIGH	linux-pam: Linux-pam directory Traversal
+CVE-2025-6021	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u3	MEDIUM	libxml2: Integer Overflow in xmlBuildQName() Leads to Stack Buffer Overflow in libxml2
+CVE-2025-6170	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u3	LOW	libxml2: Stack Buffer Overflow in xmllint Interactive Shell Command Handling
+CVE-2025-6297	dpkg	1.21.22	1.21.23	LOW	It was discovered that dpkg-deb does not properly sanitize directory p ...
+CVE-2025-6395	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u5	MEDIUM	gnutls: NULL pointer dereference in _gnutls_figure_common_ciphersuite()
+CVE-2025-64505	libpng16-16	1.6.39-2	1.6.39-2+deb12u1	MEDIUM	libpng: LIBPNG heap buffer overflow via malformed palette index
+CVE-2025-64506	libpng16-16	1.6.39-2	1.6.39-2+deb12u1	MEDIUM	libpng: LIBPNG heap buffer over-read
+CVE-2025-64720	libpng16-16	1.6.39-2	1.6.39-2+deb12u1	HIGH	libpng: LIBPNG buffer overflow
+CVE-2025-65018	libpng16-16	1.6.39-2	1.6.39-2+deb12u1	HIGH	libpng: LIBPNG heap buffer overflow
+CVE-2025-66293	libpng16-16	1.6.39-2	1.6.39-2+deb12u1	HIGH	libpng: LIBPNG out-of-bounds read in png_image_read_composite
+CVE-2025-68160	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter
+CVE-2025-68160	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter
+CVE-2025-68973	gpgv	2.2.40-1.1	2.2.40-1.1+deb12u2	HIGH	GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write
+CVE-2025-69418	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls
+CVE-2025-69418	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls
+CVE-2025-69419	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	MEDIUM	openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing
+CVE-2025-69419	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	MEDIUM	openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing
+CVE-2025-69420	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service via malformed TimeStamp Response
+CVE-2025-69420	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service via malformed TimeStamp Response
+CVE-2025-69421	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing
+CVE-2025-69421	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing
+CVE-2025-7424	libxslt1.1	1.1.35-1	1.1.35-1+deb12u2	HIGH	libxslt: Type confusion in xmlNode.psvi between stylesheet and source nodes
+CVE-2025-8058	libc6	2.36-9+deb12u7	2.36-9+deb12u13	MEDIUM	glibc: Double free in glibc
+CVE-2025-8058	libc-bin	2.36-9+deb12u7	2.36-9+deb12u13	MEDIUM	glibc: Double free in glibc
+CVE-2025-8732	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u6	LOW	libxml2: libxml2: Uncontrolled Recursion Vulnerability
+CVE-2025-9230	libssl3	3.0.11-1~deb12u2	3.0.17-1~deb12u3	MEDIUM	openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap
+CVE-2025-9230	openssl	3.0.11-1~deb12u2	3.0.17-1~deb12u3	MEDIUM	openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap
+CVE-2025-9232	libssl3	3.0.11-1~deb12u2	3.0.17-1~deb12u3	LOW	openssl: Out-of-bounds read in HTTP client no_proxy handling
+CVE-2025-9232	openssl	3.0.11-1~deb12u2	3.0.17-1~deb12u3	LOW	openssl: Out-of-bounds read in HTTP client no_proxy handling
+CVE-2025-9714	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u5	MEDIUM	libxslt: libxml2: Inifinite recursion at exsltDynMapFunction function in libexslt/dynamic.c
+CVE-2025-9820	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u6	LOW	gnutls: Stack-based Buffer Overflow in gnutls_pkcs11_token_init() Function
+CVE-2025-9900	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u3	HIGH	libtiff: Libtiff Write-What-Where
+CVE-2026-0861	libc6	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: Integer overflow in memalign leads to heap corruption
+CVE-2026-0861	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: Integer overflow in memalign leads to heap corruption
+CVE-2026-0915	libc6	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Information disclosure via zero-valued network query
+CVE-2026-0915	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Information disclosure via zero-valued network query
+CVE-2026-0989	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u6	LOW	libxml2: Unbounded RelaxNG Include Recursion Leading to Stack Overflow
+CVE-2026-0990	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u6	MEDIUM	libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing
+CVE-2026-0992	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u6	LOW	libxml2: libxml2: Denial of Service via crafted XML catalogs
+CVE-2026-1757	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u6	LOW	libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell
+CVE-2026-2219	dpkg	1.21.22	1.21.23	MEDIUM	It was discovered that dpkg-deb (a component of dpkg, the Debian packa ...
+CVE-2026-22695	libpng16-16	1.6.39-2	1.6.39-2+deb12u2	HIGH	libpng: libpng: Denial of service and information disclosure via heap buffer over-read in png_image_finish_read
+CVE-2026-22795	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing
+CVE-2026-22795	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing
+CVE-2026-22796	libssl3	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification
+CVE-2026-22796	openssl	3.0.11-1~deb12u2	3.0.18-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification
+CVE-2026-22801	libpng16-16	1.6.39-2	1.6.39-2+deb12u2	HIGH	libpng: libpng: Information disclosure and denial of service via integer truncation in simplified write API
+CVE-2026-25646	libpng16-16	1.6.39-2	1.6.39-2+deb12u3	HIGH	libpng: LIBPNG has a heap buffer overflow in png_set_quantize
+CVE-2026-27135	libnghttp2-14	1.52.0-1+deb12u1	1.52.0-1+deb12u3	HIGH	nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination
+CVE-2026-28387	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication
+CVE-2026-28387	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication
+CVE-2026-28388	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing
+CVE-2026-28388	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing
+CVE-2026-28389	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service vulnerability in CMS processing
+CVE-2026-28389	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service vulnerability in CMS processing
+CVE-2026-28390	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing
+CVE-2026-28390	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	HIGH	openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing
+CVE-2026-29111	libsystemd0	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data
+CVE-2026-29111	libudev1	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data
+CVE-2026-31789	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	CRITICAL	openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing
+CVE-2026-31789	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	CRITICAL	openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing
+CVE-2026-31790	libssl3	3.0.11-1~deb12u2	3.0.19-1~deb12u2	MEDIUM	openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key
+CVE-2026-31790	openssl	3.0.11-1~deb12u2	3.0.19-1~deb12u2	MEDIUM	openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key
+CVE-2026-33416	libpng16-16	1.6.39-2	1.6.39-2+deb12u4	MEDIUM	libpng: libpng: Arbitrary code execution due to use-after-free vulnerability
+CVE-2026-33636	libpng16-16	1.6.39-2	1.6.39-2+deb12u4	MEDIUM	libpng: libpng: Information disclosure and denial of service via out-of-bounds read/write in Neon palette expansion
+CVE-2026-33845	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	CRITICAL	gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment
+CVE-2026-33846	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	HIGH	gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly
+CVE-2026-34180	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Heap buffer over-read in ASN.1 decoding can lead to denial of service or information disclosure.
+CVE-2026-34180	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Heap buffer over-read in ASN.1 decoding can lead to denial of service or information disclosure.
+CVE-2026-34182	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	MEDIUM	openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages
+CVE-2026-34182	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	MEDIUM	openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages
+CVE-2026-34743	liblzma5	5.4.1-0.2	5.4.1-1+deb12u1	MEDIUM	xz: XZ Utils: Denial of Service via buffer overflow in index decoding
+CVE-2026-34757	libpng16-16	1.6.39-2	1.6.39-2+deb12u5	MEDIUM	libpng: libpng: Information disclosure and data corruption via use-after-free vulnerability
+CVE-2026-3783	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect
+CVE-2026-3783	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect
+CVE-2026-3784	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: curl: Unauthorized access due to improper HTTP proxy connection reuse
+CVE-2026-3784	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: curl: Unauthorized access due to improper HTTP proxy connection reuse
+CVE-2026-3833	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	HIGH	gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison
+CVE-2026-40225	libsystemd0	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: udev in systemd: Privilege escalation via malicious hardware devices and unsanitized kernel output
+CVE-2026-40225	libudev1	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: udev in systemd: Privilege escalation via malicious hardware devices and unsanitized kernel output
+CVE-2026-40226	libsystemd0	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd nspawn: Escape-to-host action via crafted config file
+CVE-2026-40226	libudev1	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd nspawn: Escape-to-host action via crafted config file
+CVE-2026-40355	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism
+CVE-2026-40355	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism
+CVE-2026-40355	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism
+CVE-2026-40355	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism
+CVE-2026-40356	libgssapi-krb5-2	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read
+CVE-2026-40356	libk5crypto3	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read
+CVE-2026-40356	libkrb5-3	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read
+CVE-2026-40356	libkrb5support0	1.20.1-2+deb12u1	1.20.1-2+deb12u5	HIGH	krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read
+CVE-2026-4046	libc6	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Denial of Service via iconv() function with specific character sets
+CVE-2026-4046	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Denial of Service via iconv() function with specific character sets
+CVE-2026-4105	libsystemd0	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method
+CVE-2026-4105	libudev1	252.22-1~deb12u1	252.39-1~deb12u2	MEDIUM	systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method
+CVE-2026-41989	libgcrypt20	1.10.1-3	1.10.1-3+deb12u1	MEDIUM	Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext
+CVE-2026-42009	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	HIGH	gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability
+CVE-2026-42010	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	CRITICAL	gnutls: gnutls: Authentication Bypass via NUL Character in Username
+CVE-2026-42011	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Security bypass due to incorrect name constraint handling
+CVE-2026-42012	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs
+CVE-2026-42013	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name
+CVE-2026-42014	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Use-after-free in gnutls_pkcs11_token_set_pin
+CVE-2026-42015	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling
+CVE-2026-42766	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: Possible NULL Dereference in Password-Based CMS Decryption
+CVE-2026-42766	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: Possible NULL Dereference in Password-Based CMS Decryption
+CVE-2026-42770	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: FFC-DH Peer Validation Uses Attacker-Supplied q
+CVE-2026-42770	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: FFC-DH Peer Validation Uses Attacker-Supplied q
+CVE-2026-4437	libc6	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Incorrect DNS response parsing via crafted DNS server response
+CVE-2026-4437	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	MEDIUM	glibc: glibc: Incorrect DNS response parsing via crafted DNS server response
+CVE-2026-4438	libc6	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions
+CVE-2026-4438	libc-bin	2.36-9+deb12u7	2.36-9+deb12u14	LOW	glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions
+CVE-2026-45445	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	MEDIUM	openssl: AES-OCB IV Ignored on EVP_Cipher() Path
+CVE-2026-45445	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	MEDIUM	openssl: AES-OCB IV Ignored on EVP_Cipher() Path
+CVE-2026-45446	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes
+CVE-2026-45446	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes
+CVE-2026-45447	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	HIGH	openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()
+CVE-2026-45447	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	HIGH	openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()
+CVE-2026-4775	libtiff6	4.5.0-6+deb12u1	4.5.0-6+deb12u4	HIGH	libtiff: libtiff: Arbitrary code execution or denial of service via signed integer overflow in TIFF file processing
+CVE-2026-4878	libcap2	1:2.66-4	1:2.66-4+deb12u3	HIGH	libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()
+CVE-2026-50219	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking
+CVE-2026-5260	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	MEDIUM	gnutls: gnutls: Information disclosure via heap overread in RSA key exchange
+CVE-2026-5419	libgnutls30	3.7.9-2+deb12u2	3.7.9-2+deb12u7	LOW	gnutls: gnutls: Information disclosure via timing side-channel in PKCS#7 padding removal
+CVE-2026-56131	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Use-after-free vulnerability due to insufficient handler call depth tracking
+CVE-2026-56208	libaom3	3.6.0-1	3.6.0-1+deb12u3	HIGH	libaom: libaom: heap buffer overflow in AV1 encoder first-pass stats buffer via LAP mode
+CVE-2026-56209	libaom3	3.6.0-1	3.6.0-1+deb12u3	HIGH	libaom: libaom: arbitrary address write via SVC layer context OOB and cyclic refresh map pointer hijack
+CVE-2026-56210	libaom3	3.6.0-1	3.6.0-1+deb12u3	HIGH	libaom: libaom: heap-buffer-overflow read via missing bounds check in ctrl_set_layer_id
+CVE-2026-56211	libaom3	3.6.0-1	3.6.0-1+deb12u3	HIGH	libaom: libaom: remote code execution via SVC layer context handling with attacker-controlled frames
+CVE-2026-56403	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts
+CVE-2026-56404	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Arbitrary Code Execution via integer overflow in addBinding
+CVE-2026-56405	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow
+CVE-2026-56406	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer
+CVE-2026-56407	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Arbitrary code execution due to integer overflow
+CVE-2026-56408	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat before 2.8.2 has an integer overflow in copyString.
+CVE-2026-56409	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	xmlwf in libexpat before 2.8.2 has an integer overflow for the output  ...
+CVE-2026-56410	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Integer overflow in xmlwf can lead to information disclosure and arbitrary code execution.
+CVE-2026-56411	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	expat: libexpat: Integer Overflow Vulnerability Leading to Information Disclosure or Code Execution
+CVE-2026-56412	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections
+CVE-2026-5773	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	HIGH	curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse
+CVE-2026-5773	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	HIGH	curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse
+CVE-2026-58050	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	HIGH	libssh2: libssh2: Heap buffer overflow via integer overflow in publickey attribute allocation
+CVE-2026-58051	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	MEDIUM	libssh2: libssh2: Denial of service or information disclosure via malformed SSH publickey response
+CVE-2026-5958	sed	4.9-1	4.9-1+deb12u1	MEDIUM	sed: GNU sed TOCTOU race condition
+CVE-2026-66032	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	MEDIUM	libssh2: libssh2: Arbitrary code execution via double-free in SFTP session
+CVE-2026-66034	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	MEDIUM	libssh2: libssh2: Information disclosure and potential arbitrary code execution via heap out-of-bounds read
+CVE-2026-7168	curl	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse
+CVE-2026-7168	libcurl4	7.88.1-10+deb12u5	7.88.1-10+deb12u15	MEDIUM	curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse
+CVE-2026-72522	libexpat1	2.5.0-1	2.5.0-1+deb12u3	MEDIUM	expat: libexpat: Denial of Service due to incorrect Unicode surrogate handling
+CVE-2026-7383	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Heap buffer overflow due to signed integer overflow in Unicode output sizing
+CVE-2026-7383	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Heap buffer overflow due to signed integer overflow in Unicode output sizing
+CVE-2026-7598	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1	HIGH	libssh2: integer overflow via large username or password arguments
+CVE-2026-76957	libexpat1	2.5.0-1	2.5.0-1+deb12u3	HIGH	libexpat: libexpat: Memory corruption vulnerability allows arbitrary code execution or denial of service
+CVE-2026-86145	libpcre2-8-0	10.42-1	10.42-1+deb12u1	HIGH	pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions
+CVE-2026-89156	libpcre2-8-0	10.42-1	10.42-1+deb12u1	LOW	PCRE2: PCRE2: Out-of-bounds read via invalid UTF data during JIT fallback
+CVE-2026-89157	libpcre2-8-0	10.42-1	10.42-1+deb12u1	MEDIUM	pcre2: PCRE2: Out-of-bounds write via large pattern input
+CVE-2026-89158	libpcre2-8-0	10.42-1	10.42-1+deb12u1	MEDIUM	PCRE2: PCRE2: Out-of-bounds write via integer overflow on 32-bit platforms
+CVE-2026-89160	libpcre2-8-0	10.42-1	10.42-1+deb12u1	LOW	pcre2: PCRE2: Denial of Service via out-of-bounds read during invalid UTF matching
+CVE-2026-89161	libpcre2-8-0	10.42-1	10.42-1+deb12u1	HIGH	pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match
+CVE-2026-9076	libssl3	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to heap out-of-bounds read in CMS password-based decryption
+CVE-2026-9076	openssl	3.0.11-1~deb12u2	3.0.20-1~deb12u2	LOW	openssl: OpenSSL: Denial of Service due to heap out-of-bounds read in CMS password-based decryption
+CVE-2026-9672	libgd3	2.3.3-9	2.3.3-9+deb12u1	HIGH	libgd: buffer overflow when processing specially crafted GIF file
+DLA-4726-1	ca-certificates	20230311	20250419~deb12u1	UNKNOWN	ca-certificates - CA certificates update
+DSA-5979-2	libxslt1.1	1.1.35-1	1.1.35-1+deb12u3	UNKNOWN	libxslt - regression update
+DSA-5990-1	libxml2	2.9.14+dfsg-1.3~deb12u1	2.9.14+dfsg-1.3~deb12u4	UNKNOWN	libxml2 - security update
