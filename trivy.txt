@@ -26,6 +26,10 @@ How was found - looking over the `grype` tests look at higher probability first.
 Then looked at `https://security-tracker.debian.org/tracker/CVE-2024-2511`
 Google search it and found `https://mailman.nginx.org/pipermail/nginx-devel/2020-April/013092.html`
 
+openssl s_client \
+  -connect 127.0.0.1:8443 \
+  -servername localhost \
+  -tls1_3
 
 
 
