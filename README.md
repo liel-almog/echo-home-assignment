@@ -20,8 +20,6 @@ docker run -it --rm nginx:1.25-bookworm ldd $(which nginx) | grep libssl
 
 Go to `https://nginx.org/en/security_advisories.html` and search for `major` vulnerability and look for ones that affect the version we are at (1.25.x)
 
-### CVE-2024-6119
-
 | ID             | Severity | Fix Method   | Evidence Link                                   | Reason                                                                                              |
 | -------------- | -------- | ------------ | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | CVE-2024-6119  | HIGH     | Version Bump | https://avd.aquasec.com/nvd/cve-2024-6119       | CVE in libssl3 - Possible denial of service in X.509 name checks                                    |
