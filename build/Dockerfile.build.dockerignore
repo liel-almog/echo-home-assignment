@@ -1,6 +1,7 @@
 .git
 .agents
 .codex
+dist
 baseline-grype.txt
 baseline-trivy.txt
 poc

@@ -1,0 +1,14 @@
+FROM debian:bookworm-slim AS builder
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    build-essential ca-certificates curl dpkg-dev libgd-dev \
+    libgeoip-dev libpcre2-dev libssl-dev libxml2-dev \
+    libxslt1-dev patch zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY build/ /work/build/
+RUN bash /work/build/build.sh --package /out
+
+FROM scratch AS artifact
+COPY --from=builder /out/ /

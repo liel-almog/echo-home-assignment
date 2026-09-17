@@ -1,20 +1,13 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-if (( $# != 2 )); then
-  printf 'Usage: %s OUTPUT_DIR UPSTREAM_ROOT\n' "$0" >&2
+if (( $# != 1 )); then
+  printf 'Usage: %s OUTPUT_DIR\n' "$0" >&2
   exit 2
 fi
 
 install -d "$1"
 output_dir="$(cd -- "$1" && pwd -P)"
-upstream_root="$(cd -- "$2" && pwd -P)"
-for path in etc/nginx/nginx.conf etc/nginx/conf.d/default.conf usr/share/nginx/html/index.html; do
-  if [[ ! -f "$upstream_root/$path" ]]; then
-    printf 'Missing upstream file: %s\n' "$upstream_root/$path" >&2
-    exit 1
-  fi
-done
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 version=1.25.5
 revision='1+echo1'
@@ -84,8 +77,10 @@ for patch_name in "${patches[@]}"; do
     # This backport has one older grpc context line in nginx 1.25.5.
     fuzz=1
   fi
+  printf 'Applying %s\n' "$patch_name"
   patch --batch --forward --fuzz="$fuzz" -p1 < "$patch_file"
 done
+printf 'Applied all %d security patches to nginx %s source\n' "${#patches[@]}" "$version"
 
 ./configure \
   --prefix=/etc/nginx \
@@ -113,12 +108,14 @@ make -j"${JOBS:-2}"
 
 package_root="$work_dir/package"
 install -d "$package_root/DEBIAN" "$package_root/usr/sbin" \
-  "$package_root/etc/nginx" "$package_root/usr/share/nginx/html" \
+  "$package_root/etc/nginx/html" "$package_root/usr/share/nginx/html" \
   "$package_root/usr/share/doc/nginx-echo" \
   "$package_root/var/log/nginx" "$package_root/var/cache/nginx"
 install -m 755 objs/nginx "$package_root/usr/sbin/nginx"
-cp -a "$upstream_root/etc/nginx/." "$package_root/etc/nginx/"
-cp -a "$upstream_root/usr/share/nginx/html/." "$package_root/usr/share/nginx/html/"
+install -m 644 conf/nginx.conf conf/mime.types conf/fastcgi_params \
+  conf/scgi_params conf/uwsgi_params "$package_root/etc/nginx/"
+install -m 644 html/index.html html/50x.html "$package_root/etc/nginx/html/"
+install -m 644 html/index.html html/50x.html "$package_root/usr/share/nginx/html/"
 install -m 644 LICENSE "$package_root/usr/share/doc/nginx-echo/copyright"
 
 cat > "$package_root/DEBIAN/control" <<EOF
@@ -134,7 +131,7 @@ Description: nginx ${version} with CVE-2026-42533 backport
  Requires the Bookworm OpenSSL update for CVE-2024-6119.
 EOF
 
-find "$package_root/etc/nginx" -type f -printf '/etc/nginx/%f\n' \
+find "$package_root/etc/nginx" -type f -printf '/etc/nginx/%P\n' \
   > "$package_root/DEBIAN/conffiles"
 
 package_file="$output_dir/nginx_${version}-${revision}_${architecture}.deb"

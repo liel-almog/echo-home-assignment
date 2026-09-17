@@ -27,21 +27,35 @@ Go to `https://nginx.org/en/security_advisories.html` and search for `major` vul
 
 ## Build the patched Debian package
 
-Run `make build` from the repository root. The Dockerfile starts with a fresh
-`debian:bookworm-slim` image, installs build tools, and calls
-`build/build.sh --package /out /work/upstream`. The package script downloads the pinned nginx
-1.25.5 source, verifies its SHA-256, applies the five CVE-2026-42533 patches in
-order, compiles nginx, and creates `dist/nginx_1.25.5-1+echo1_<arch>.deb`.
-The final image stage exports only that `.deb`; it contains no build tools.
-The Makefile extracts the build result into `dist/` as the invoking user.
+Run `make build` from the repository root. `build/Dockerfile.build` starts with
+a fresh `debian:bookworm-slim` builder, installs build tools, and calls
+`build/build.sh --package /out`. The package script downloads the
+pinned nginx 1.25.5 source, verifies its SHA-256 hash, applies the five
+CVE-2026-42533 patches in order, and compiles nginx. It creates
+`dist/nginx_1.25.5-1+echo1_<arch>.deb`. The `artifact` stage exports only that
+`.deb`; it contains no build tools. The Makefile extracts the build result into
+`dist/` as the invoking user. The build Dockerfile's ignore file excludes
+existing `dist/` artifacts from the builder context.
 
-Run `make image` to build `nginx-echo:1.25.5`. Its final stage starts from
-`debian:bookworm-slim`, installs the source-built `.deb` and runtime tools, and
-copies the official `nginx:1.25-bookworm` entrypoint scripts. The `.deb` packages
-the official image's configuration and static HTML as conffiles and data, while
-the nginx executable is compiled from the pinned source. The runtime image uses
-the official port 80, root process, default working directory, entrypoint,
-command, and SIGQUIT stop signal.
+Run `make image` to rebuild the `.deb` and then build `nginx-echo:1.25.5` from
+`Containerfile`. The runtime build starts from `debian:bookworm-slim`, installs
+the `.deb` from `dist/`. No nginx image, binary, configuration, HTML, or
+entrypoint is copied from `nginx:1.25-bookworm`: the package uses the nginx
+source tree's `conf/` and `html/` files, and the repository supplies the small
+entrypoint script. The runtime image exposes port 80, runs nginx as root with
+its worker user set to `nginx`, and uses the nginx command and SIGQUIT stop
+signal.
+
+To exercise the patched image with the online proof of concept, first run
+`make image`, then run `./build-fix.sh` from `poc/online/fixed/`. That
+Dockerfile uses `nginx-echo:1.25.5`; `poc/online/Dockerfile` intentionally
+uses the vulnerable `nginx:1.25-bookworm` baseline. The proof of concept's
+`--crash` mode only reports whether the worker remains available, so it is not
+a pass/fail check for the patch. Use the exact vulnerable behavior or exploit
+result as the verification criterion. `Containerfile` uses nginx's source
+default configuration, so it does not contain the PoC `/l2/` location.
+The `--leak` probe now rejects non-200 responses instead of treating a default
+site error page as leaked data.
 
 The package depends on `libssl3 >= 3.0.14-1~deb12u2`, the Debian Bookworm fix
 for CVE-2024-6119. It includes the nginx binary, default configuration, and
