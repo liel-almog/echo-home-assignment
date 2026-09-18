@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 .SHELLFLAGS := -euo pipefail -c
 
-.PHONY: all build image
+.PHONY: all build image test
 
 all: image
 
@@ -10,9 +10,12 @@ build:
 
 	mkdir -p dist
 
-	docker build --progress=plain --pull --no-cache -f build/Dockerfile.build --target artifact --output type=tar,dest=- . | tar --no-same-owner --no-same-permissions -xf - -C dist
+	docker build --pull --no-cache -f build/Dockerfile.build --target artifact --output type=tar,dest=- . | tar --no-same-owner --no-same-permissions -xf - -C dist
 
 	@if [[ $$EUID -eq 0 && -n "$${SUDO_UID:-}" ]]; then chown -R "$$SUDO_UID:$${SUDO_GID:-$$SUDO_UID}" dist; fi
 
 image: build
 	docker build --pull --no-cache -f Containerfile -t nginx-echo:1.25.5 .
+
+test: image
+	python3 ./test/CVE-2026-42533/test_leak.py

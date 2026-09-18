@@ -6,6 +6,7 @@ if (( $# != 1 )); then
   exit 2
 fi
 
+# Variable
 install -d "$1"
 output_dir="$(cd -- "$1" && pwd -P)"
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
@@ -21,6 +22,7 @@ patches=(
   CVE-2026-42533-4.patch
 )
 
+# Check every build tool exists
 for program in curl sha256sum tar patch make dpkg dpkg-query dpkg-deb; do
   command -v "$program" >/dev/null || {
     printf 'Missing build tool: %s\n' "$program" >&2
@@ -28,6 +30,7 @@ for program in curl sha256sum tar patch make dpkg dpkg-query dpkg-deb; do
   }
 done
 
+# SSL versions
 ssl_package=
 ssl_version=
 architecture="$(dpkg --print-architecture)"
@@ -60,6 +63,7 @@ work_dir="$(mktemp -d "${TMPDIR:-/tmp}/nginx-package.XXXXXX")"
 trap 'rm -rf -- "$work_dir"' EXIT
 archive="$work_dir/nginx-${version}.tar.gz"
 
+# install , build and patch from source
 curl --fail --location --show-error --silent --retry 3 \
   --output "$archive" "$source_url"
 printf '%s  %s\n' "$source_sha256" "$archive" | sha256sum --check -
@@ -82,6 +86,7 @@ for patch_name in "${patches[@]}"; do
 done
 printf 'Applied all %d security patches to nginx %s source\n' "${#patches[@]}" "$version"
 
+# configure
 ./configure \
   --prefix=/etc/nginx \
   --sbin-path=/usr/sbin/nginx \
@@ -104,7 +109,7 @@ printf 'Applied all %d security patches to nginx %s source\n' "${#patches[@]}" "
   --with-stream_ssl_module \
   --with-pcre-jit
 
-make -j"${JOBS:-2}"
+make -j2
 
 package_root="$work_dir/package"
 install -d "$package_root/DEBIAN" "$package_root/usr/sbin" \

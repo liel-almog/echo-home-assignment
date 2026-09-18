@@ -8,7 +8,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY build/ /work/build/
-RUN bash /work/build/build.sh --package /out
+RUN bash /work/build/package.sh /out
 
 FROM scratch AS artifact
 COPY --from=builder /out/ /
