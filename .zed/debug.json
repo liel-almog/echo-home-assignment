@@ -1,0 +1,14 @@
+// Project-local debug tasks
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "adapter": "Debugpy",
+    "label": "Debug Leak Test",
+    "request": "launch",
+    "program": "test/CVE-2026-42533/test_leak.py",
+    "console": "integratedTerminal",
+    "args": [],
+  },
+]

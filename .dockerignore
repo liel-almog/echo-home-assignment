@@ -1,0 +1,7 @@
+.git
+.agents
+.codex
+baseline-grype.txt
+baseline-trivy.txt
+poc
+test
